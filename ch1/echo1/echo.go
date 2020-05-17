@@ -7,12 +7,10 @@ import (
 	"os"
 )
 
-/*
- * Command-line arguments are available to a program in a variable named Args that is part of the os package
- * The variable os.Args is like a slice of strings.
- * The first element of os.Args, os.Args[0] is the name of the command itself, the other elements are the
- * arguments presented to the program
- */
+// Command-line arguments are available to a program in a variable named Args that is part of the os package
+// The variable os.Args is like a slice of strings.
+// The first element of os.Args, os.Args[0] is the name of the command itself, the other elements are the
+// arguments presented to the program
 func main() {
 	var s, sep string // here sep will act as separator
 

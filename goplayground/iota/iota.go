@@ -1,9 +1,7 @@
-/*
- * Within a constant declaration, the predeclared identifier iota represents
- * successive untyped integer constants.
- * It is reset to 0 whenever the reserved word const appears in the source.
- * It can be used to construct a set of related constants
- */
+// Within a constant declaration, the predeclared identifier iota represents
+// successive untyped integer constants.
+// It is reset to 0 whenever the reserved word const appears in the source.
+// It can be used to construct a set of related constants.
 package main
 
 import "fmt"

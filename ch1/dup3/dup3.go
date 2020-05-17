@@ -1,10 +1,8 @@
-/*
- * The previous 2 versions of dup operate in a streaming mode in which input is read
- * and broken into lines as needed, so in principle those programs can handle an arbitrary
- * number of input.
- * In this program an alternate approach is taken wherein the program reads the entire input
- * into memory in one big gulp, split into lines  all at once, then process the lines.
- */
+// The previous 2 versions of dup operate in a streaming mode in which input is read
+// and broken into lines as needed, so in principle those programs can handle an arbitrary
+// number of input.
+// In this program an alternate approach is taken wherein the program reads the entire input
+// into memory in one big gulp, split into lines  all at once, then process the lines.
 package main
 
 import (

@@ -14,17 +14,13 @@ func main() {
 	if len(files) == 0 { // Revert to reading lines from stdin if no file names are passed
 		countDupLines(os.Stdin, contents)
 	} else {
-		/*
-		 * In each iteration read the file name from Args,
-		 * open the file and read the lines in it
-		 * close the file if file was opened successfully
-		 */
+		// In each iteration read the file name from Args,
+		// open the file and read the lines in it
+		// close the file if file was opened successfully
 		for _, arg := range files {
-			/*
-			 * os.Open returns 2 values.
-			 * First one is the open file (*os.File)
-			 * Second one is the result of os.Open which is a value of built-in error type
-			 */
+			// os.Open returns 2 values.
+			// First one is the open file (*os.File)
+			// Second one is the result of os.Open which is a value of built-in error type
 			f, err := os.Open(arg)
 			if err != nil {
 				fmt.Fprintf(os.Stderr, "dup2: %v\n", err)
