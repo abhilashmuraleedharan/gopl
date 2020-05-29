@@ -1,8 +1,8 @@
 // This program simulates the race condition depicted in the picture accessible from below link
 // https://drive.google.com/file/d/0B22KXlqHz6ZNaW9mQ0U1b0tiUUE/view
 
-// Race condition occurs when two parallely executing entities try to access the same shared memory
-// The A race condition will give unpredictable results.
+// Race condition occurs when two parallely executing entities try to access the same shared memory for read/write operation.
+// A race condition will give unpredictable results.
 package main
 
 import (
